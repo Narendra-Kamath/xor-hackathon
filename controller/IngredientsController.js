@@ -3,9 +3,9 @@ let sequelize = require ('../config/connection.js');
 module.exports = {
     getIngreditentsForMedicine: function(req, res){
         sequelize.query(
-            "SELECT * FROM medicines_ingredients_mapping where medicine_id = ?",
+            "SELECT * FROM medicines_ingredients_mapping where medicine_id= :id",
             {   
-                replacements: req.query.medicineId,
+                replacements: { name: `${req.query.id}` },
                 type: sequelize.QueryTypes.SELECT
             }
         ).then(ingredients => {
