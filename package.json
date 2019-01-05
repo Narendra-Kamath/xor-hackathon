@@ -1,0 +1,28 @@
+{
+  "name": "xor-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "start-dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navster95/xor-hackathon.git"
+  },
+  "keywords": [],
+  "author": "Narendra Kamath G <narendrakamathg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/navster95/xor-hackathon/issues"
+  },
+  "homepage": "https://github.com/navster95/xor-hackathon#readme",
+  "dependencies": {
+    "express": "4.16.4",
+    "sequelize": "4.42.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.9"
+  }
+}
