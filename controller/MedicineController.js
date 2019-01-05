@@ -5,7 +5,7 @@ module.exports = {
         sequelize.query (
             "SELECT * FROM medicines where name like :name"
         , {
-            replacements: { name: '%' + req.body.name + '%' },
+            replacements: { name: '%' + req.name + '%' },
             type: sequelize.QueryTypes.SELECT
         }).then(medicines => {
             return res.send({
