@@ -2,7 +2,7 @@ var sequelize = require ('../config/connection.js');
 
 module.exports = {
     searchMedicine: function(req, res){
-        sequalize.query (
+        sequelize.query (
             "SELECT * FROM medicines where name like :name"
         , {
             replacements: { name: '%' + req.body.name + '%' },
