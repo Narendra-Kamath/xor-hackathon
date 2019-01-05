@@ -5,7 +5,7 @@ module.exports = {
         sequelize.query(
             "SELECT * FROM medicines_ingredients_mapping where medicine_id = ?",
             {   
-                replacements: req.body.medicineId,
+                replacements: req.query.medicineId,
                 type: sequelize.QueryTypes.SELECT
             }
         ).then(ingredients => {
