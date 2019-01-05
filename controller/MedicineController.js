@@ -8,7 +8,10 @@ module.exports = {
             replacements: { name: '%' + req.body.name + '%' },
             type: sequelize.QueryTypes.SELECT
         }).then(medicines => {
-            return medicines;
+            return res.send({
+                success: true,
+                data: medicines
+            })
         });
     }
 }

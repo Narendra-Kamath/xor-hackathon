@@ -1,7 +1,7 @@
 var sequelize = require ('../config/connection.js');
 
 module.exports = (sequelize) => {
-    const User = sequelize.define('users', {
+    const User = sequelize.define('user', {
         id: {
             type: SQ.INTEGER
         },
