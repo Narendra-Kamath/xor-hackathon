@@ -8,4 +8,4 @@ const ingredientsController = require ('../controller/IngredientsController')
 router.post('/searchMedicine', medicineController.searchMedicine)
 router.post('/getIngredients', ingredientsController.getIngreditentsForMedicine)
 
-module.exports = routadd
+module.exports = router
