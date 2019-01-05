@@ -20,7 +20,8 @@
   "homepage": "https://github.com/navster95/xor-hackathon#readme",
   "dependencies": {
     "express": "4.16.4",
-    "sequelize": "4.42.0"
+    "pg": "^7.7.1",
+    "sequelize": "^4.42.0"
   },
   "devDependencies": {
     "nodemon": "1.18.9"
